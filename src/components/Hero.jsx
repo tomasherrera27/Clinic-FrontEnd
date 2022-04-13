@@ -1,5 +1,7 @@
 import React from 'react'
 import banner from '../assets/banner.jpeg';
+import {Link} from 'react-router-dom';
+
 function Hero() {
   return (
 <div className="hero min-h-screen" style={{ backgroundImage: `url(${banner})` }}>
@@ -8,7 +10,7 @@ function Hero() {
     <div className="max-w-md">
       <h1 className="mb-5 text-5xl font-bold">Bienvenido a la clinica odontologica</h1>
       <p className="mb-5"> Inicie sus tramites medicos, En el instante</p>
-      <button className="btn btn-primary">Iniciar Sesión</button>
+      <Link to={"/login"}><button className="btn btn-primary">Iniciar Sesión</button></Link>
     </div>
   </div>
 </div>
